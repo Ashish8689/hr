@@ -32,26 +32,36 @@ else{
 
 <style>
 
-  .nav-link{
-    font-size: 17px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, .77);
-    border-radius: 24px;
-    transition: .4s;
-    border: 2px solid #9f0fef;
+  .navbar{
+    height: 12vh;
   }
 
-  .nav-link i{
+  .navbar-brand{
+    font-size: 16px!important;
+  }
+
+  .nav-link-logout{
+    font-size: 14px;
+    font-weight: 800;
+    color: whitesmoke;
+    border-radius: 24px;
+    transition: .4s;
+    text-transform: uppercase;
+    border: 2px solid #9f0fef;
+    padding: 8px 15px;
+  }
+
+  .nav-link-logout i{
     color: whitesmoke;
   }
 
-  .nav-link:hover{
-    color: #9f0fef!important;
+  .nav-link-logout:hover{
     background-color: whitesmoke;
     border: 2px solid #9f0fef;
+    color: #9f0fef!important;
   }
 
-  .nav-link:hover i{
+  .nav-link-logout:hover i{
     color: #9f0fef;
     /* background-color: #ec5b53; */
   }
@@ -86,15 +96,20 @@ else{
 
 <body>
 
+
+
  <!-- Top Navbar -->
- <nav class="navbar y-1 px-5 shadow justify-content-between">
+ <nav class="navbar shadow justify-content-between">
 
-  <a class="navbar-brand" href="#">Hr Binds</a>
+  <div class="container-lg">
 
-  <a class="nav-link" href="logout.php">
-      <i class="fas fa-sign-out-alt mr-2"></i>
-      Logout
-  </a>
+    <a class="navbar-brand" href="#">Hr Binds</a>
+
+    <a class="nav-link-logout" href="logout.php">
+        <i class="fas fa-sign-out-alt mr-2"></i>
+        Logout
+    </a>
+  </div>
 </nav>
 
 
